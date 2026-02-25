@@ -113,7 +113,9 @@ resource "aws_eks_addon" "ebs_csi_driver" {
   addon_version               = data.aws_eks_addon_version.ebs_csi.version
   service_account_role_arn    = aws_iam_role.ebs_csi_driver.arn
   resolve_conflicts_on_update = "OVERWRITE" //"PRESERVE" to not to make any over rides on existing configurations
+  depends_on = [aws_eks_node_group.microservices]
   tags                        = var.tags
 }
+
 
 
