@@ -10,7 +10,7 @@ cluster_version = "1.34"
 
 # Existing VPC and NAT Gateway
 vpc_id                  = "vpc-0bc5a65352408085d"
-existing_nat_gateway_id = "#############"
+existing_nat_gateway_id = "nat-16b6c0e4695180176"
 
 # Availability Zones (should match your VPC's AZs)
 availability_zones = ["us-east-1a", "us-east-1c"]
@@ -45,3 +45,4 @@ image_mutability = "IMMUTABLE"
 owners       = "hareesh"
 environment  = "development"
 project_name = "mobilefirst-eks"
+
