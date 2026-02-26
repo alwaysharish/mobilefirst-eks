@@ -1,4 +1,4 @@
-# AWS EKS Cluster Provisioning and Application Deployment using Terraform
+# AWS EKS Cluster Provisioning using Terraform
 
 ## Project Overview
 
