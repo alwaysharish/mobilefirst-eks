@@ -90,26 +90,6 @@ kubectl get nodes
 
 ---
 
-## Application Deployment Steps
-
-### Step 1: Build Docker Image
-docker build -t my-app . 
-
-### Step 2: Tag Image for ECR
-docker tag my-app:latest <account-id>.dkr.ecr.<region>.amazonaws.com/my-app:latest
-
-### Step 3: Push Image to ECR
-docker push <account-id>.dkr.ecr.<region>.amazonaws.com/my-app:latest
-
-### Step 4: Deploy Application to EKS
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-
-Verify deployment:
-kubectl get pods
-kubectl get svc
-
----
 
 ## Storage Configuration
 
@@ -135,9 +115,9 @@ This project uses:
 
 ## Outcome
 
-Successfully provisioned a production-ready AWS EKS cluster using Terraform and deployed containerized applications using Kubernetes.
+Successfully provisioned a production-ready AWS EKS cluster using Terraform.
 
-This setup follows DevOps best practices including Infrastructure as Code, automation, scalability, and high availability.
+Application deployment is handled separately using ArgoCD in a different repository following GitOps principles.
 
 ---
 
