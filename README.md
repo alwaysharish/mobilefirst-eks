@@ -2,10 +2,13 @@
 
 ## Project Overview
 
-This project demonstrates end-to-end provisioning of an AWS EKS (Elastic Kubernetes Service) cluster using Terraform and deployment of containerized applications using Kubernetes.
+This project demonstrates provisioning of an AWS EKS (Elastic Kubernetes Service) cluster using Terraform.
 
-The infrastructure is fully automated using Infrastructure as Code (IaC) principles, ensuring scalability, reliability, and repeatability.
+The infrastructure is fully automated using Infrastructure as Code (IaC) principles to ensure scalability, reliability, and consistency.
 
+This repository focuses only on infrastructure provisioning, including VPC, IAM roles, EKS cluster, and node groups.
+
+Application deployment is managed separately using ArgoCD and Kubernetes manifests in a different repository following GitOps practices.
 ---
 
 ## Architecture Components
